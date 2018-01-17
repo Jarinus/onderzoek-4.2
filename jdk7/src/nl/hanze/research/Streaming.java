@@ -17,7 +17,7 @@ public class Streaming extends Test {
     protected void execute() {
         Collection<String> valuesWithoutId = new ArrayList<>();
 
-        for (String value: values) {
+        for (String value : values) {
             Matcher m = OMIT_DIGITS.matcher(value);
 
             if (!m.find()) {

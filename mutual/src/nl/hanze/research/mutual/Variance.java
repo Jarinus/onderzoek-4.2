@@ -4,7 +4,7 @@ import java.util.stream.Stream;
 
 public class Variance {
 
-    public static double of(Long[] measurements) {
+    public static double of(Double[] measurements) {
         double average = Average.of(measurements);
 
         return Stream.of(measurements)
