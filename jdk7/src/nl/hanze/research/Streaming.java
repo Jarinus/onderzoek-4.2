@@ -18,13 +18,13 @@ public class Streaming extends Test {
         Collection<String> valuesWithoutId = new ArrayList<>();
 
         for (String value : values) {
-            Matcher m = OMIT_DIGITS.matcher(value);
+            Matcher matcher = OMIT_DIGITS.matcher(value);
 
-            if (!m.find()) {
+            if (!matcher.find()) {
                 continue;
             }
 
-            valuesWithoutId.add(m.group("value"));
+            valuesWithoutId.add(matcher.group("value"));
         }
     }
 }
