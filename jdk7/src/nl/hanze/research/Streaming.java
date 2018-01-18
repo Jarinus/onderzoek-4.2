@@ -20,7 +20,7 @@ public class Streaming extends Test {
         for (String value : values) {
             Matcher matcher = OMIT_DIGITS.matcher(value);
 
-            if (!matcher.find()) {
+            if (!matcher.matches()) {
                 continue;
             }
 
